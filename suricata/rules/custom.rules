@@ -1,0 +1,20 @@
+alert tcp any any -> any 22 (
+    msg:"Potential SSH brute force";
+    threshold:type both, track by_src, count 5, seconds 60;
+    classtype:attempted-admin;
+    sid:100001; rev:1;
+)
+
+alert tcp any any -> any 23 (
+    msg:"Telnet attempt detected";
+    classtype:attempted-admin;
+    sid:100002; rev:1;
+)
+
+alert dns any any -> any 53 (
+    msg:"DNS long response possible data exfiltration";
+    dns.query;
+    pcre:"/.{200,}/";
+    classtype:exfiltration;
+    sid:100010; rev:1;
+)
