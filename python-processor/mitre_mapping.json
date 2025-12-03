@@ -1,0 +1,5 @@
+{
+  "Potential SSH brute force": ["T1110"],
+  "Telnet attempt detected": ["T1021"],
+  "DNS long response possible data exfiltration": ["T1041"]
+}
