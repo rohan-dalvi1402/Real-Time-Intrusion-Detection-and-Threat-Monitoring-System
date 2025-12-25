@@ -1,1 +1,18 @@
+{
+  "dashboard": {
+    "title": "Real-Time IDS Dashboard",
+    "panels": [
+      {
+        "type": "visualization",
+        "panelIndex": "1",
+        "title": "Alerts Over Time"
+      },
+      {
+        "type": "visualization",
+        "panelIndex": "2",
+        "title": "Top Source IPs"
+      }
+    ]
+  }
+}
 
