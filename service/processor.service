@@ -1,0 +1,11 @@
+[Unit]
+Description=IDS Python Log Processor
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/Real-Time-IDS/python-processor/processor.py
+WorkingDirectory=/opt/Real-Time-IDS/python-processor
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
