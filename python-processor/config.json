@@ -1,0 +1,6 @@
+{
+  "EVE_PATH": "../suricata/eve.json",
+  "ELASTICSEARCH_HOST": "http://localhost:9200",
+  "ELASTICSEARCH_INDEX": "suricata-alerts",
+  "THREAT_INTEL_API_KEY": ""
+}
